@@ -4,461 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GastroPlus</title>
-    <link rel="icon" href="images/logo1.png">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- normalize css -->
-    <link rel = "stylesheet" href = "css/normalize.css">
-    <!-- custom css -->
-    <link rel = "stylesheet" href = "css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Anjan Lamichhane</title>
+    <link rel="icon" href="logoa.png">
+   
 </head>
 <body>
-    
+        
+<!--    <div class="loader">
+    <img src="loading.gif" alt="">
+  </div> -->
 
-    <!-- header -->
-    <header class = "header bg-blue">
-        <nav class = "navbar bg-blue">
-            <div class = "container flex">
-                <a href = "index.html" class = "navbar-brand">
-                    <img src = "images/logo1.png" alt = "site logo">
-                </a>
-                <button type = "button" class = "navbar-show-btn">
-                    <img src = "images/ham-menu-icon.png">
-                </button>
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="logoa.png" alt="" width="50px"></a>
 
-                <div class = "navbar-collapse bg-white">
-                    <button type = "button" class = "navbar-hide-btn">
-                        <img src = "images/close-icon.png">
-                    </button>
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Home</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#about" class = "nav-link">About</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#services" class = "nav-link">Service</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#doc-panel" class = "nav-link">Doctors</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "pictures.html" class = "nav-link">Gallery</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#posts" class = "nav-link">Posts</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#contact" class = "nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class = "search-bar">
-                        <form>
-                            <div class = "search-bar-box flex">
-                                <span class = "search-icon flex">
-                                    <img src = "images/search-icon-dark.png">
-                                </span>
-                                <input type = "search" class = "search-control" placeholder="Search here">
-                            </div>
-                        </form>
-                    </div>
-                </div> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="bar">
+                <i class="open fa-solid fa-bars"></i>
+                <i class="close fa-solid fa-xmark"></i>
             </div>
         </nav>
-
-        <div class = "header-inner text-white text-center">
-            <div class = "container grid">
-                <div class = "header-inner-left">
-                    <h1>your most trusted<br> <span>health partner</span></h1>
-                    <p class = "lead">the best match services for you</p>
-                    <!-- <p class = "text text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla odit esse necessitatibus corporis voluptatem?</p> -->
-                    <div class = "btn-group">
-                        <!-- <a href = "#about" class = "btn btn-white">Learn More</a> -->
-                        <!-- <a href = "#" class = "btn btn-light-blue">Sign In</a> -->
-                    </div>
+    </div>
+    <div class="main">
+        <div class="home" id="home">
+            <div class="left text">
+                <span>Hello, I'm</span><br>
+                <h1>Anjan Lamichhane</h1>
+                <h3>I'm a <span class="typing1"></span></h3>
+                <div class="buttons">
+                    <button class="btn"><a href="#contact">Contact me</a></button>
                 </div>
-                <div class = "header-inner-right">
-                    <img src = "images/aa.jpg ">
+            </div>
+            <div class="image">
+                <img src="png logo copy.png" alt="Anjan">
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="title aboutTxt">
+                <span>About me</span>
+            </div>
+            <div class="container">
+                <div class="img">
+                    <img src="anjan.JPG" alt="Anjan">
+                </div>
+                <div class="aboutText">
+                    <h2>Hello, I'm Anjan & I'm a <span class="typing2"></span></h2>
+                    <p>I'm Anjan Lamichhane, a passionate frontend developer based in Kathmandu, Nepal. With a strong foundation in computer engineering and a deep appreciation for user-centric design, I specialize in crafting intuitive and visually appealing web experiences. Through my extensive knowledge of HTML, CSS, and JavaScript, I bring ideas to life and create seamless interactions that delight users. With a keen eye for detail and a dedication to staying up-to-date with the latest industry trends, I strive to deliver exceptional user experiences that leave a lasting impression. As a frontend developer, I am driven by the opportunity to merge creativity with technical expertise, and I am excited to contribute to the ever-evolving world of web development.</p>
+                    <div class="buttons">
+                        <button class="btn">Download CV</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- end of header -->
-
-    <main>
-        <!-- about section -->
-        <section id = "about" class = "about py">
-            <div class = "about-inner">
-                <div class = "container grid">
-                    <div class = "about-left text-center">
-                        <div class = "section-head">
-                            <h2>About Us</h2>
-                            <div class = "border-line"></div>
-                        </div>
-                        <p class = "text text-lg">We are Pokhara's Leading Preventative Clinic committed to providing the highest quality patient care.
-
-                            We treat patients of all ages emphasizing preventive medicine and wellness. Our state of art facility engages skillful medical professionals who use latest equipment to provide quality patient care in the clinic or in the comfort of your home.
-                        <br>Gastroplus clinic is a multispeciality clinic dedicated to diseases of GI and HPB</p>
-                            
-                        <!-- <a href = "#about" class = "btn btn-white">Learn More</a> -->
-                    </div>
-                    <div class = "about-right flex">
-                        <div class = "img">
-                            <img src = "images/aboutclinic.jpg">
-                        </div>
-                    </div>
-                </div>
+        <div class="services" id="services">
+            <div class="servicesTxt title">
+                <span>Services</span>
             </div>
-        </section>
-        <!-- end of about section -->
-
-        <!-- banner one -->
-        <section id = "banner-one" class = "banner-one text-center">
-            <div class = "container text-white">
-                <blockquote class = "lead"><i class = "fas fa-quote-left"></i> When you are young and healthy, it never occurs to you that in a single second your whole life could change. <i class = "fas fa-quote-right"></i></blockquote>
-                <small class = "text text-sm">- Anonim Nano</small>
-            </div>
-        </section>
-        <!-- end of banner one -->
-
-        <!-- services section -->
-        <section id = "services" class = "services py">
-            <div class = "container">
-                <div class = "section-head text-center">
-                    <h2 class = "lead">The Best Doctor gives the least medicines</h2>
-                    <p class = "text text-lg">A perfect way to show your hospital services</p>
-                    <div class = "line-art flex">
-                        <div></div>
-                        <img src = "images/4-dots.png">
-                        <div></div>
-                    </div>
-                </div>
-                <div class = "services-inner text-center grid">
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <!-- <img src = "images/service-icon-1.png"> -->
-                            <img src="https://www.clinicone.com.np/wp-content/uploads/2021/02/svgexport-5.svg" alt="">
+            <div class="serviceBox">
+                <div class="box">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-line"></i>
                         </div>
-                        <h3>Imaging</h3>
-                        <p class = "text text-sm"> X-Ray, Ultrasound, Echo, ECG <br>
-                            We offer these services quickly. Speed and customer service are our differences. We are super sanitary and change the linen and paper after every service. This ensures our patients don’t get a potential infection from other patients’ skin contact. </p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <!-- <img src = "images/service-icon-2.png"> -->
-                            <img src="https://www.clinicone.com.np/wp-content/uploads/2017/12/Lab.png
-                            " alt="">
-                        </div>
-                        <h3>Lab Services</h3>
-                        <p class = "text text-sm">GastroPlus provides all kinds of Lab services. We have our In-House Laboratory at Clinic and we are associated with NRL and URL for lab tests.
-                            For more information, 
-                            contact us at <br> 061-591255
-                            </p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <!-- <img src = "images/service-icon-3.png"> -->
-                            <img src="https://www.clinicone.com.np/wp-content/uploads/2021/02/svgexport-7.svg" alt="">
-                        </div>
-                        <h3>In House Pharmacy</h3>
-                        <p class = "text text-sm">The Pharmacy department at GastroPlus offers a wide range of Nepal Government approved medicines, all kinds of surgical items and OT instruments to our patients.
-
-                            Please call us to understand the medicine that we offer. We will try to support your needs directly or through our partner companies.</p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <!-- <img src = "images/service-icon-4.png"> -->
-                            <img src="https://www.clinicone.com.np/wp-content/uploads/2021/02/svgexport-6.svg" alt="">
-                        </div>
-                        <h3>Minor Procedures and Surgeries</h3>
-                        <p class = "text text-sm">Outpatient procedures of skin, Gynecology, Cardiac, Chest, Laser Protocology Surgery and Others</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- end of services section -->
-
-        <!-- banner two section -->
-        <section id = "banner-two" class = "banner-two text-center">
-            <div class = "container grid">
-                <div class = "banner-two-left">
-                    <img src = "images/banner.png">
-                </div>
-                <div class = "banner-two-right">
-                    <p class = "lead text-white">When you are young and healthy, it never occurs to you that in a single second your whole life could change.</p>
-                    <!-- <div class = "btn-group"> -->
-                        <!-- <a href = "#" class = "btn btn-white">Learn More</a> -->
-                        <!-- <a href = "#" class = "btn btn-light-blue">Sign In</a> -->
-                    <!-- </div> -->
-                </div>
-            </div>
-        </section>
-        <!-- end of banner two section -->
-
-        <!-- doctors section -->
-        <section id = "doc-panel" class = "doc-panel py">
-            <div class = "container">
-                <div class = "section-head">
-                    <h2>Our Doctors Panel</h2>
-                </div>
-
-                <div class = "doc-panel-inner grid">
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <!-- <img src = "images/pose.jpeg" alt = "doctor image"> -->
-                            <img src="images/doctor1.jpg" alt="">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr. Sujan Gautam</p>
-                                <p class = "text-lg">GI & HPB Surgen</p>
-                            </div>
+                        <div>
+                            <div class="text">Marketing</div>
+                            <p>As a marketing professional, I bring a wealth of knowledge and experience to the table. With a strategic mindset and a passion for creativity, I help businesses build their brand, reach their target audience, and drive growth. From developing comprehensive marketing strategies to executing impactful campaigns, I am dedicated to delivering results. With expertise in market research, digital marketing, and brand management, I craft compelling messages and implement effective marketing tactics across various channels. My goal is to create meaningful connections with customers, generate leads, and ultimately contribute to the success and profitability of businesses.</p>
                         </div>
                     </div>
 
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/doctor2.jpg" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr. Ashok Tiwari</p>
-                                <p class = "text-lg">Consultant Physician
-                                    MBBS,MD (Internal medicine)</p>
-                            </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div>
+                            <div class="text">Analytics</div>
+                            <p>As an analytics professional, I specialize in harnessing the power of data to drive insights and decision-making. With a keen eye for detail and a strong analytical mindset, I help businesses uncover valuable patterns and trends within their data. By utilizing advanced analytics tools and techniques, I transform raw data into meaningful information that can be used to optimize strategies, identify opportunities for growth, and make data-driven decisions. My goal is to empower businesses with actionable insights that fuel their success and drive measurable results.</p>
                         </div>
                     </div>
 
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/fff.jpg" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr. Pradeep Bhattarai</p>
-                                <p class = "text-lg">Consultant Paediatrician
-                                    MBBS,MD (Paediatric)</p>
-                            </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-brush"></i>
                         </div>
+                        <div>
+                            <div class="text">Web Designing</div>
+                            <p>As a web designer, I offer personalized and innovative services to help you establish a strong online presence. From crafting visually striking and user-friendly websites to optimizing responsive design for seamless mobile experiences, I am dedicated to creating captivating interfaces that resonate with your target audience. With expertise in custom website design, user experience (UX) design, and interface design, I bring your vision to life while ensuring optimal functionality and aesthetic appeal. Whether you need a brand-new website or a redesign of your existing one, I am committed to delivering exceptional results that elevate your online presence.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+               <div class="skills" id="skills">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skillBox">
+                <div class="left">
+                    <div class="text">
+                        My Skills
+                    </div>
+                    <p>With a solid foundation in HTML, strong proficiency in CSS, and a growing proficiency in JavaScript, I possess a diverse set of skills in web development. With an 80% proficiency in HTML, I am adept at structuring and organizing web content effectively. With a 60% proficiency in CSS, I am skilled in creating visually appealing and responsive designs. While my JavaScript proficiency is at 50%, I am actively expanding my knowledge and honing my skills in this dynamic programming language. With this skill set, I am well-equipped to contribute to the development of engaging and user-friendly websites while continuously striving to enhance my expertise in the field.</p>
+                    <div class="buttons">
+                        <button class="btn">Read more</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="progress html">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress css">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress js">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress photoshop">
+                        <div class="info">
+                            <span>Photoshop</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="range"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end of doctors section -->
+        </div>
 
-        <!-- package services section -->
-        <section id = "package-service" class = "package-service py text-center">
-            <div class = "container">
-                <div class = "package-service-head text-white">
-                    <img src="images/services_img.jpg" alt="">
-                    <img src="images/sewaharu.jpg" alt="">
-                    <!-- <h2>Package Service</h2> -->
-                    <!-- <p class = "text text-lg">Best service package for you</p> -->
-                </div>
-                <!-- <div class = "package-service-inner grid"> -->
-                    <!-- <div class = "package-service-item bg-white"> -->
-                        <!-- <div class = "icon flex"> -->
-                            <!-- <i class = "fas fa-phone fa-2x"></i> -->
-                        <!-- </div> -->
-                        <!-- <h3>Regular Case</h3> -->
-                        <!-- <p class = "text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.</p> -->
-                        <!-- <a href = "#" class = "btn btn-blue">Read More</a> -->
-                    <!-- </div> -->
-
-                    <!-- <div class = "package-service-item bg-white"> -->
-                        <!-- <div class = "icon flex"> -->
-                            <!-- <i class = "fas fa-calendar-alt fa-2x"></i> -->
-                        <!-- </div> -->
-                        <!-- <h3>Serious Case</h3> -->
-                        <!-- <p class = "text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.</p> -->
-                        <!-- <a href = "#" class = "btn btn-blue">Read More</a> -->
-                    <!-- </div> -->
-                    
-                    <!-- <div class = "package-service-item bg-white"> -->
-                        <!-- <div class = "icon flex"> -->
-                            <!-- <i class = "fas fa-comments fa-2x"></i> -->
-                        <!-- </div> -->
-                        <!-- <h3>Emergency Case</h3> -->
-                        <!-- <p class = "text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.</p> -->
-                        <!-- <a href = "#" class = "btn btn-blue">Read More</a> -->
-                    <!-- </div> -->
-                <!-- </div> -->
+        <div class="contact" id="contact">
+            <div class="title">
+                <span>Contact Me</span>
             </div>
-        </section>
-        <!-- end of package services section -->
-
-        <!-- posts section -->
-        <section id = "posts" class = "posts py">
-            <div class = "container">
-                <div class = "section-head">
-                    <h2>Latest Post</h2>
-                </div>
-                <div class = "posts-inner grid">
-                    <article class = "post-item bg-white">
-                        <div class = "img">
-                            <img src = "images/package.jpg">
+            <div class="contactBox">
+                <div class="left">
+                    <span>Message Me</span>
+                    <form action="submit">
+                        <div class="genInfo">
+                            <input type="text" placeholder="Name" class="name">
+                            <input type="email" placeholder="Email" class="email">
                         </div>
-                        <div class = "content">
-                            <h4>नि : शुल्क उपचार </h4>
-                            <p class = "text text-sm">पेट , कलेजो , प्यान्क्रियाज , पित्तथैली , पित्तनली , सानो तथा ठुलो आन्द्रा र मलद्वारको क्यान्सर नि : शुल्क उपचार प्रत्येक महिनाको पहिलो शनिबार 
-                                समय : बिहान १०  बजे देखि १२ बजे सम्म  </p>
-                            <!-- <p class = "text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia ipsam, quis iure sed nulla.</p> -->
-                            <div class = "info flex">
-                                <small class = "text text-sm"><i class = "fas fa-clock"></i> November 11, 2023</small>
-                                <small class = "text text-sm"><i class = "fas fa-comment"></i> 5 comments</small>
-                            </div>
+                        <div class="subject">
+                            <input type="text" placeholder="Subject">
                         </div>
-                    </article>
-
-                    <article class = "post-item bg-white">
-                        <div class = "img">
-                            <!-- <img src = "images/post-2.jpg"> -->
-                            <img src="https://ayurvaramchennai.com/wp-content/uploads/2022/06/pilesss111111.jpg" alt="">
+                        <div class="message">
+                            <textarea name="message" rows="8" placeholder="Message..." required></textarea>
                         </div>
-                        <div class = "content">
-                            <h4>What is Piles ?</h4>
-                            <p class = "text text-sm">Piles, also known as hemorrhoids, are swollen veins in the lower rectum and anus. They can cause discomfort, itching, and bleeding, especially during bowel movements. Piles can be internal or external, depending on their location. Internal piles occur inside the rectum and are usually not visible during an external examination. External piles form small lumps on the outside edge of the anus. Piles can be caused by increased pressure in the lower rectum due to chronic constipation, chronic diarrhea, lifting heavy weights, or straining when passing a stool. Treatment options for piles include over-the-counter creams and ointments, lifestyle changes, and surgical procedures.</p>
-                            <p class = "text text-sm"> If you are experiencing symptoms of piles, it is best to consult a medical professional for proper diagnosis and treatment.</p>
-                            <div class = "info flex">
-                                <small class = "text text-sm"><i class = "fas fa-clock"></i> November 14, 2023</small>
-                                <small class = "text text-sm"><i class = "fas fa-comment"></i> 3 comments</small>
-                            </div>
+                        <div>
+                            <button class="btn">Send Message</button>
                         </div>
-                    </article>
-
-                    <article class = "post-item bg-white">
-                        <div class = "img">
-                            <img src = "https://anushtupde.com/wp-content/uploads/2022/06/laparoscopic-surgery.jpg">
-                        </div>
-                        <div class = "content">
-                            <h4>what is Laser Proctology Surgery?</h4>
-                            <p class = "text text-sm">Laser proctology is a minimally invasive surgical treatment of diseases of the colon, rectum, and anus using a laser. Common conditions treated with laser proctology include hemorrhoids, fissures, fistula, pilonidal sinus, and polyps.</p>
-                            <p class = "text text-sm"> Laser ablation uses a high-energy laser to accurately treat affected areas of tissues without pain or bleeding. The technique is increasingly being used to treat piles in both men and women. The laser is the latest modality for fissures, fistulas, and piles. It is a daycare procedure that offers several advantages over traditional surgery.
-
-                                <br>&#9900; Less operation time
-                                <br>&#9900; Discharge within a few hours
-                                <br>&#9900; Go back to a normal routine within a day or two
-                                <br>&#9900; Great surgical precision
-                                <br>&#9900; Faster recovery</p>
-                            <div class = "info flex">
-                                <small class = "text text-sm"><i class = "fas fa-clock"></i> November 18, 2023</small>
-                                <small class = "text text-sm"><i class = "fas fa-comment"></i> 7 comments</small>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- end of posts section -->
-
-        <!-- contact section -->
-        <section id = "contact" class = "contact py">
-            <div class = "container grid">
-                <div class = "contact-left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.0479827992076!2d83.99851215084652!3d28.205854736507682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39959543ebba6557%3A0xa5713f62037b1ddf!2sGastroplus%20Clinic%20Pvt.%20Ltd!5e0!3m2!1sne!2snp!4v1697567763735!5m2!1sne!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
-                <div class = "contact-right text-white text-center bg-blue">
-                    <div class = "contact-head">
-                        <h3 class = "lead">Contact Us</h3>
-                        <!-- <p class = "text text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga.</p> -->
-                    </div>
-                    <form>
-                        <div class = "form-element">
-                            <input type = "text" class = "form-control" placeholder="Your name">
-                        </div>
-                        <div class = "form-element">
-                            <input type = "email" class = "form-control" placeholder="Your email">
-                        </div>
-                        <div class = "form-element">
-                            <textarea rows = "5" placeholder="Your Message" class = "form-control"></textarea>
-                        </div>
-                        <button type = "submit" class = "btn btn-white btn-submit">
-                            <i class = "fas fa-arrow-right"></i> Send Message
-                        </button>
                     </form>
                 </div>
-            </div>
-        </section>
-        <!-- end of contact section -->
-    </main>
-
-    <!-- footer  -->
-    <footer id = "footer" class = "footer text-center">
-        <div class = "container">
-            <div class = "footer-inner text-white py grid">
-                <div class = "footer-item">
-                    <h3 class = "footer-head">about us</h3>
-                    <div class = "icon">
-                        <img src = "images/service-icon-4.png">
+                <div class="right">
+                    <span>Get in Touch</span>
+                    <p>
+                        I would be delighted to connect with you! If you have any inquiries, suggestions, or would like to discuss potential collaborations, please don't hesitate to reach out. </p>
+                    <div class="infoBox name">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="user">
+                            <div>Name</div>
+                            <div>Anjan Lamichhane</div>
+                        </div>
                     </div>
-                    <p class = "text text-md">We are Pokhara's Leading Preventative Clinic committed to providing the highest quality patient care.</p>
-                    <address>
-                        GastroPlus Clinic <br>
-                        Pokhara-10, Amarsingh Chowk <br>
-                        Kaski, Nepal.
-                    </address>
+                    <div class="infoBox email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="user">
+                            <div>Email</div>
+                            <div>anjanlc5644@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="infoBox address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="user">
+                            <div>Address</div>
+                            <div>Kathmandu,Nepal</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class = "footer-item">
-                    <h3 class = "footer-head">tags</h3>
-                    <ul class = "tags-list flex">
-                        <li>Medical Care</li>
-                        <li>Emergency</li>
-                        <li>Therapy</li>
-                        <li>Surgery</li>
-                        <li>Laser Proctology Surgery</li>
-                        <li>Nurse</li>
-                        
-                    </ul>
-                </div>
-
-                <div class = "footer-item">
-                    <h3 class = "footer-head">Quick Links</h3>
-                    <ul>
-                        <li><a href = "#services" class = "text-white">Our Services</a></li>
-                        <li><a href = "#posts" class = "text-white">Our Posts</a></li>
-                        <!-- <li><a href = "#" class = "text-white">Privacy Policy</a></li> -->
-                        <!-- <li><a href = "#" class = "text-white">Appointment Schedule</a></li> -->
-                    </ul>
-                </div>
-
-                <div class = "footer-item">
-                    <h3 class = "footer-head">Opens at:</h3>
-                    <p class = "text text-md"><br>Sunday to Friday 7:30 AM - 6:30 PM , Saturday 7:30 AM - 1:00 PM</p>
-                    <ul class = "appointment-info">
-                        <!-- <li>8:00 AM - 11:00 AM</li>
-                        <li>2:00 PM - 05:00 PM</li>
-                        <li>8:00 PM - 11:00 PM</li> -->
-                        <li>
-                            <i class = "fas fa-envelope"></i>
-                            <span>gastroplusclinic079@gmail.com</span>
-                        </li>
-                        <li>
-                            <i class = "fas fa-phone"></i>
-                            <span><br>061-591255, 9765934467</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "footer-links">
-                <ul class = "flex">
-                    <li><a href = "https://www.facebook.com/profile.php?id=61552300912920" target="_blank" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
-                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
-                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
-
-                </ul>
-                <br>
-            <h4>
-                    <a href="https:www.lamichhaneanjan.com.np" target="_blank">Designed by &#9749; Anjan Lamichhane</a>
-            </h4>
             </div>
         </div>
-    </footer>
-    <!-- end of footer  -->
+    </div>
+    <div class="footer">
+        <div class="copy">
+            Copyright &copy; 2023 Anjan Lamichhane.
+        </div>
+        <div class="socialIcons">
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-square-facebook" >
+            </i></a>
+            <a><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </div>
+
+    <div class="topBtn">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
 
 
-    <!-- custom js -->
-    <script src = "script.js"></script>
+    <script src="scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
+<!--     <script src="preloader.js"></script> -->
     
 </body>
 </html>
