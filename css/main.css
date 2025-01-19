@@ -32,6 +32,7 @@ body{
 img{
     width: 100%;
     display: block;
+    
 }
 ul{
     list-style: none;
@@ -158,7 +159,7 @@ h1, h2, h3{
     min-height: 100vh;
 }
 .navbar{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -273,7 +274,7 @@ button[class ^= navbar]:hover{
 
 /* header inner */
 .header-inner{
-    padding-top: 16rem;
+    padding-top: 8rem;
 }
 .header-inner-left h1{
     font-size: 4rem;
@@ -299,15 +300,54 @@ button[class ^= navbar]:hover{
             justify-content: center;
 }
 .header-inner-right{
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    margin-top: -2rem; /* Negative margin to uplift the image */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically if needed */
+    height: 500px; 
 }
 .header-inner-right img{
     max-width:100%;
     margin: 0 auto;
-    max-height:100%;
+    height:100%;
     border-radius:15% ;
     
 }
+
+/* Scroll Up Button Styles */
+.scroll-up-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Change the color as needed */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-up-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.scroll-up-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Show button when scrolled */
+.scroll-up-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* about section */
 .section-head h2{
@@ -355,18 +395,7 @@ button[class ^= navbar]:hover{
     max-width: 720px;
     position: relative;
 }
-/* .about-right .img img{
-    padding-top: 10rem;
-    -webkit-transform: scaleX(1.03);
-        -ms-transform: scaleX(1.03);
-            transform: scaleX(1.03);
-} */
-/* .about-right .img::after, .about-right .img::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-} */
+
 .about-right .img::after{
     top: -56px;
     left: 0;
@@ -467,47 +496,70 @@ button[class ^= navbar]:hover{
             justify-content: center;
 }
 
-/* doctors panel */
-.doc-panel-inner{
+/* Doctor panel CSS */
+
+/* Doctors Panel Container */
+.doc-panel-inner {
     margin-top: 8rem;
 }
-.doc-panel-item{
+
+/* Individual Doctor Panel Item */
+.doc-panel-item {
     margin-bottom: 6rem;
 }
-.doc-panel-item:last-child{
+
+/* Remove margin from the last item */
+.doc-panel-item:last-child {
     margin-bottom: 0;
 }
-.doc-panel-item .img{
+
+/* Image Container Styling */
+.doc-panel-item .img {
     position: relative;
     height: 440px;
-    background-color: var(--light-gray);
-    overflow: hidden;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    overflow: hidden; /* Ensure no overflow */
+    display: flex;
+    align-items: flex-end; /* Align content to the bottom */
+    justify-content: center; /* Center image horizontally */
 }
-.doc-panel-item .img .info{
+
+/* Image Styling */
+.doc-panel-item .img img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is a block-level element */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+/* Info Overlay Styling */
+.doc-panel-item .img .info {
     position: absolute;
     bottom: -100%;
     left: 0;
     width: 100%;
     height: 100px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffffff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.3s ease; /* Smooth transition for the overlay */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-.doc-panel-item .img{
-    max-width: 357px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.doc-panel-item:hover .info{
+
+
+/* Show overlay on hover */
+.doc-panel-item:hover .info {
     bottom: 0;
 }
+
+
+
+/* End of doctor panel CSS */
+
+
 
 /* package service */
 .package-service-inner{
@@ -1023,4 +1075,79 @@ button[class ^= navbar]:hover{
     -webkit-transition: none!important;
     -o-transition: none!important;
     transition: none!important;
+}
+
+ /* Gradient for static and typing text */
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Typing effect styles */
+.typing-js-h1 {
+    background: linear-gradient(90deg, #ff6f61, #ff9478, #ffc18e); /* Gradient color */
+    -webkit-background-clip: text;
+    color: transparent; /* Required to make the gradient visible inside text */
+    border-right: 3px solid white; /* Blinking caret */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+/* Blinking caret animation */
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing-js-h1 {
+    animation: blinkCaret 0.75s step-end infinite;
+}
+
+/* Smooth scaling on hover */
+.typing-js-h1:hover {
+    transform: scale(1.05); /* Slightly grow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.typing-js-p {
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================== */
+.header-inner-right {
+    position: relative;
+    height: 500px; /* Ensure a height is set for visibility */
+    overflow: hidden;
+}
+
+.fade-in-image {
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Ensure it's not visible initially */
+    transition: opacity 2s ease-in, visibility 2s ease-in; /* Fade-in effect */
+    width: 100%; /* Adjust to your needs */
+    height: auto; /* Adjust to maintain aspect ratio */
+}
+
+.header-inner-right img {
+    opacity: 1; /* Make fully visible */
+    visibility: visible; /* Ensure it's visible */
+    animation: fadeIn 2s ease-in forwards; /* Animation effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
 }
