@@ -13,75 +13,83 @@
     <link rel = "stylesheet" href = "css/normalize.css">
     <!-- custom css -->
     <link rel = "stylesheet" href = "css/main.css">
+
 </head>
 <body>
     
 
     <!-- header -->
-    <header class = "header bg-blue">
-        <nav class = "navbar bg-blue">
-            <div class = "container flex">
-                <a href = "index.html" class = "navbar-brand">
-                    <img src = "images/logo1.png" alt = "site logo">
-                </a>
-                <button type = "button" class = "navbar-show-btn">
-                    <img src = "images/ham-menu-icon.png">
-                </button>
-
-                <div class = "navbar-collapse bg-white">
-                    <button type = "button" class = "navbar-hide-btn">
-                        <img src = "images/close-icon.png">
+        <header class = "header bg-blue">
+            <nav class = "navbar bg-blue">
+                <div class = "container flex">
+                    <a href = "index.html" class = "navbar-brand">
+                        <img src = "images/logo1.png" alt = "site logo">
+                    </a>
+                    <button type = "button" class = "navbar-show-btn">
+                        <img src = "images/ham-menu-icon.png">
                     </button>
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Home</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#about" class = "nav-link">About</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#services" class = "nav-link">Service</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#doc-panel" class = "nav-link">Doctors</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "pictures.html" class = "nav-link">Gallery</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#posts" class = "nav-link">Posts</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#contact" class = "nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class = "search-bar">
-                        <form>
-                            <div class = "search-bar-box flex">
-                                <span class = "search-icon flex">
-                                    <img src = "images/search-icon-dark.png">
-                                </span>
-                                <input type = "search" class = "search-control" placeholder="Search here">
-                            </div>
-                        </form>
-                    </div>
-                </div> 
-            </div>
-        </nav>
+
+                    <div class = "navbar-collapse bg-white">
+                        <button type = "button" class = "navbar-hide-btn">
+                            <img src = "images/close-icon.png">
+                        </button>
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link">Home</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#about" class = "nav-link">About</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#services" class = "nav-link">Service</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#doc-panel" class = "nav-link">Doctors</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "pictures.html" class = "nav-link">Gallery</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#posts" class = "nav-link">Posts</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#contact" class = "nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div class = "search-bar">
+                            <form>
+                                <div class = "search-bar-box flex">
+                                    <span class = "search-icon flex">
+                                        <img src = "images/search-icon-dark.png">
+                                    </span>
+                                    <input type = "search" class = "search-control" placeholder="Search here">
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
+                </div>
+            </nav>
 
         <div class = "header-inner text-white text-center">
             <div class = "container grid">
                 <div class = "header-inner-left">
-                    <h1>your most trusted<br> <span>health partner</span></h1>
-                    <p class = "lead">the best match services for you</p>
-                    <!-- <p class = "text text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla odit esse necessitatibus corporis voluptatem?</p> -->
+                    <!-- <h1>your most trusted<br> <span>health partner</span></h1>
+                    <p class = "lead">the best match services for you</p>      
                     <div class = "btn-group">
-                        <!-- <a href = "#about" class = "btn btn-white">Learn More</a> -->
                         <a href = "tel:+977-9765934467" class = "btn btn-light-blue">Call Now</a>
-                    </div>
+                    </div> -->
+                    <h1>your most trusted <span class="typing-js-h1"></span></h1>
+            <p class="typing-js-p lead">the best match services for you</p>      
+            <div class="btn-group">
+                <a href="tel:+977-9765934467" class="btn btn-light-blue">Call Now</a>
+            </div>
+
                 </div>
-                <div class = "header-inner-right">
-                    <img src = "images/aa.jpg ">
+                <!-- <div class = "header-inner-right">
+                    <img src = "images/DocSujan.jpg ">
+                </div> -->
+                <div class="header-inner-right">
+                    <img src="images/DocSujan.jpg" class="fade-in-image" alt="Doctor Sujan">
                 </div>
             </div>
         </div>
@@ -212,48 +220,46 @@ we are associated with National Path lab and URL for quality pathology and lab t
         <!-- end of banner two section -->
 
         <!-- doctors section -->
-        <section id = "doc-panel" class = "doc-panel py">
-            <div class = "container">
-                <div class = "section-head">
+        <section id="doc-panel" class="doc-panel py">
+            <div class="container">
+                <div class="section-head">
                     <h2>Our Doctors Panel</h2>
                 </div>
-
-                <div class = "doc-panel-inner grid">
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <!-- <img src = "images/pose.jpeg" alt = "doctor image"> -->
-                            <img src="images/doctor1.jpg" alt="">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr. Sujan Gautam</p>
-                                <p class = "text-lg">GI & HPB Surgen</p>
+        
+                <div class="doc-panel-inner grid">
+                    <div class="doc-panel-item">
+                        <div class="img flex">
+                            <img src="images/doctor1.jpg" alt="Dr. Sujan Gautam">
+                            <div class="info text-center bg-blue text-white flex">
+                                <p class="lead">Dr. Sujan Gautam</p>
+                                <p class="text-lg">GI & HPB Surgeon</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/doctor2.jpg" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr. Ashok Tiwari</p>
-                                <p class = "text-lg">Consultant Physician
-                                    MBBS,MD (Internal medicine)</p>
+        
+                    <div class="doc-panel-item">
+                        <div class="img flex">
+                            <img src="images/doctor2.jpg" alt="Dr. Ashok Tiwari">
+                            <div class="info text-center bg-blue text-white flex">
+                                <p class="lead">Dr. Ashok Tiwari</p>
+                                <p class="text-lg">Consultant Physician MBBS,MD (Internal medicine)</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/fff.jpg" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr. Pradeep Bhattarai</p>
-                                <p class = "text-lg">Consultant Paediatrician
-                                    MBBS,MD (Paediatric)</p>
+        
+                    <div class="doc-panel-item">
+                        <div class="img flex">
+                            <img src="images/fff.jpg" alt="Dr. Pradeep Bhattarai">
+                            <div class="info text-center bg-blue text-white flex">
+                                <p class="lead">Dr. Pradeep Bhattarai</p>
+                                <p class="text-lg">Consultant Paediatrician MBBS,MD (Paediatric)</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- end of doctors section -->
 
         <!-- package services section -->
@@ -389,6 +395,12 @@ we are associated with National Path lab and URL for quality pathology and lab t
             </div>
         </section>
         <!-- end of contact section -->
+         <!-- Scroll Up Button -->
+            <a href="#" class="scroll-up-btn" id="scrollUpBtn">
+            <!-- <img src="images/scroll-up-icon.png" alt="Scroll to Top"> -->
+            <i class="fa-sharp fa-solid fa-angle-up" style="color: #dba614;"></i>
+</a>
+
     </main>
 
     <!-- footer  -->
@@ -469,5 +481,60 @@ we are associated with National Path lab and URL for quality pathology and lab t
 
     <!-- custom js -->
     <script src = "script.js"></script>
-    
+
+
+    <!--  JavaScript for Scroll Up Button -->
+
+      <script>
+        const scrollUpBtn = document.getElementById('scrollUpBtn');
+        
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollUpBtn.classList.add('show');
+            } else {
+                scrollUpBtn.classList.remove('show');
+            }
+        };
+        
+        // Scroll to top when the button is clicked
+        scrollUpBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor click behavior
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        </script>
+
+        <!-- End of Scroll Up js -->
+
+<!-- Js for Typing Effect  -->
+
+
+    <script>const typingText = "health partner";
+
+        function typeText(element, text, index, typing, delay) {
+            if (typing) {
+                // Typing logic: Type one character at a time
+                element.innerHTML = text.slice(0, index);
+                if (index < text.length) {
+                    setTimeout(() => typeText(element, text, index + 1, typing, delay), 100); // Typing speed
+                } else {
+                    // After typing is done, wait for some time and then start erasing
+                    setTimeout(() => typeText(element, text, text.length, false, delay), 2000); // Erase delay after typing
+                }
+            } else {
+                // Erasing logic: Clear the text all at once
+                element.innerHTML = "";
+                setTimeout(() => typeText(element, text, 0, true, delay), delay); // Start typing again after clearing
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const typingElement = document.querySelector(".typing-js-h1");
+            typeText(typingElement, typingText, 0, true, 1000); // Start typing "health partner"
+        });
+        </script>
+
+        
+
+
 </body>
