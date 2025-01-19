@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GastroCare</title>
+    <link rel="icon" href="images/logo1.png">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- normalize css -->
@@ -71,18 +72,23 @@
         <div class = "header-inner text-white text-center">
             <div class = "container grid">
                 <div class = "header-inner-left">
-                    <h1>your most trusted<br> <span>health partner</span></h1>
-                    <p class = "lead">the best match services for you</p>
-                    <!-- <p class = "text text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla odit esse necessitatibus corporis voluptatem?</p> -->
-                    <br>
+                    <!-- <h1>your most trusted<br> <span>health partner</span></h1>
+                    <p class = "lead">the best match services for you</p>      
                     <div class = "btn-group">
-                        
-                        <a href = "#pictures" class = "btn btn-white">See Photos</a>
-                        <!-- <a href = "#" class = "btn btn-light-blue">Sign In</a> -->
-                    </div>
+                        <a href = "tel:+977-9765934467" class = "btn btn-light-blue">Call Now</a>
+                    </div> -->
+                    <h1>your most trusted <span class="typing-js-h1"></span></h1>
+            <p class="typing-js-p lead">the best match services for you</p>      
+            <div class="btn-group">
+                <a href="tel:+977-9765934467" class="btn btn-light-blue">Call Now</a>
+            </div>
+
                 </div>
-                <div class = "header-inner-right">
-                    <img src = "images/aa.jpg">
+                <!-- <div class = "header-inner-right">
+                    <img src = "images/DocSujan.jpg ">
+                </div> -->
+                <div class="header-inner-right">
+                    <img src="images/DocSujan.jpg" class="fade-in-image" alt="Doctor Sujan">
                 </div>
             </div>
         </div>
@@ -207,6 +213,56 @@
 
     <!-- custom js -->
     <script src = "script.js"></script>
+    <!--  JavaScript for Scroll Up Button -->
+
+    <script>
+        const scrollUpBtn = document.getElementById('scrollUpBtn');
+        
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollUpBtn.classList.add('show');
+            } else {
+                scrollUpBtn.classList.remove('show');
+            }
+        };
+        
+        // Scroll to top when the button is clicked
+        scrollUpBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor click behavior
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        </script>
+
+        <!-- End of Scroll Up js -->
+
+<!-- Js for Typing Effect  -->
+
+
+    <script>const typingText = "health partner";
+
+        function typeText(element, text, index, typing, delay) {
+            if (typing) {
+                // Typing logic: Type one character at a time
+                element.innerHTML = text.slice(0, index);
+                if (index < text.length) {
+                    setTimeout(() => typeText(element, text, index + 1, typing, delay), 100); // Typing speed
+                } else {
+                    // After typing is done, wait for some time and then start erasing
+                    setTimeout(() => typeText(element, text, text.length, false, delay), 2000); // Erase delay after typing
+                }
+            } else {
+                // Erasing logic: Clear the text all at once
+                element.innerHTML = "";
+                setTimeout(() => typeText(element, text, 0, true, delay), delay); // Start typing again after clearing
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const typingElement = document.querySelector(".typing-js-h1");
+            typeText(typingElement, typingText, 0, true, 1000); // Start typing "health partner"
+        });
+        </script>
     
 </body>
 </html>
